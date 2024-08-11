@@ -1,0 +1,132 @@
+body {
+  background-color: #f4f4f4;
+}
+a {
+  text-decoration: none;
+}
+.primaryBtn {
+  padding: 8px 16px;
+  color: white;
+  /* background: linear-gradient(43deg, #f79d00 1%, #64f38c 99%); */
+  background: #007e3c;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.secondaryBtn {
+  padding: 8px 16px;
+  color: white;
+  /* background: linear-gradient(43deg, #f79d00 1%, #64f38c 99%); */
+  background: #f79d00;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.primaryBtn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.primaryBtn span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.primaryBtn:hover span {
+  padding-right: 25px;
+}
+
+.primaryBtn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.navStyle {
+  z-index: 100;
+}
+.hero-img {
+  z-index: -10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+.hero-content {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  background: rgba(34, 69, 46, 0.665);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.hero-heading {
+  background-color: #f79d00;
+  padding: 1rem;
+}
+.form-Style {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.form-Input {
+  padding: 8px 16px;
+  width: 70%;
+}
+.footer-list {
+  list-style: none;
+}
+.footer-list a {
+  text-decoration: none;
+  display: block;
+}
+.footer-links {
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .footer-links {
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  .footer span {
+    text-align: center;
+  }
+}
+.deaneries {
+  font-weight: bold;
+}
+.hero-img2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+.truncate {
+  display: -webkit-box;
+  --webkit-line-clamp: 5;
+  --webkit-box-orient: vertical;
+  overflow: hidden;
+}
