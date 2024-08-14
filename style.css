@@ -130,3 +130,24 @@ a {
   --webkit-box-orient: vertical;
   overflow: hidden;
 }
+#checkbox {
+  display: none;
+}
+.checkbox-label {
+  display: inline-block;
+  cursor: pointer;
+  color: white;
+  background: #007e3c;
+  padding: 3px 13px;
+  border-radius: 4px;
+}
+.content {
+  margin-top: -1rem;
+  display: none;
+}
+#checkbox:checked ~ .content {
+  display: block;
+}
+#checkbox:checked ~ label {
+  display: none;
+}
