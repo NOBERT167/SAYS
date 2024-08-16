@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="style.css" />
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        />
+      </head>
+<body>
+    <header>
+        <nav
+          class="navbar navbar-expand-lg bg-dark navStyle"
+          data-bs-theme="dark"
+        >
+          <div class="container-fluid py-2">
+            <a class="navbar-brand" href="/">
+              <img src="./assets/logo.jpg" style="width: 50px;" alt="">
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    About
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="about/bio.html"
+                        >Our Bio</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="about/history.html"
+                        >Our History</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="about/saint-anthony"
+                        >St. Anthony of Padua</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Youth Apostolate</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="/deaneries.html">Deaneries & Parishes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Education</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Family Life</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">New/Events</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Legal</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+    <main class="container">
+        <div class="text-center my-5">
+          <h1>Youth Apostolate</h1>
+          <p>We have got six departments under the St. Anthony Youth Service</p>
+        </div>
+          <ol id="youth-apostolate-buttons">
+              <li><button id="cdk-youth-btn">CDK Youth</button></li>
+              <li><button id="vocations-btn">Vocations (Vijana na Wito)</button></li>
+              <li><button id="kccusa-btn">KCCUSA (Watafutaji)</button></li>
+              <li><button id="ycs-btn">YCS</button></li>
+              <li><button id="iccsa-btn">ICCSA</button></li>
+              <li><button id="pmc-btn">PMC</button></li>
+          </ol>        
+          <div id="cdk-youth" class="hidden">
+              <h3>CDK Youth</h3>
+              <p>Combines all the departments.</p>
+          </div>
+          <div id="vocations" class="hidden">
+              <h3>Vocations (Vijana na Wito)</h3>
+              <p>Youth called to Holy Orders of priesthood or sisterhood.VIJANA NA WITO ASSOCIATION(VIWA)
+                  Vijana na Wito Association (VIWA) is a vocations-geared component of the youth fraternity of the Catholic Diocese of Kericho. It is composed of youths who have completed their high school, in university or college or tertiary institutions levels of education, and even those who have completed their higher education. This body was formed during the chaplaincy of Rev,Fr Moses Langat, the current Diocesan Youth Chaplain and Vocations Director.
+                  The VIWA members are of both genders, and the main aim of this spiritual body is to identify, nurture, and grow vocations amongst their member youths.
+                  Members meet regularly for Masses at least twice a year and attend vocations-oriented seminars and workshops organized by the Diocesan Vocations Department.
+                  Member youth are united under the common call to serve and evangelize to all people, and the preparation towards a life spent in this service under the religious life is the central spirit of this youthful body.
+                  </p>
+          </div>
+          <div id="kccusa" class="hidden">
+              <h3>KCCUSA (Watafutaji)</h3>
+              <button onclick="showKccusaSubsection('about-kccusa')">About KCCUSA</button>
+              <button onclick="showKccusaSubsection('saint-augustine')">St. Augustine of Hippo</button>
+              <div id="about-kccusa" class="subsection hidden">
+                  <h4>About KCCUSA</h4>
+              <p>Spirit of Conception and Founding:
+                  Founding Date and Location: December 29th, 2021, in Bomet Parish.
+                  Founders: Diocesan Chaplain, Rev Fr Moses Langat, with the blessings of His Lordship RT. Rev Bishop Alfred Rotich, and member youths from Bomet and other Deaneries within the Catholic Diocese of Kericho.
+                  Patron Saints: St Anthony of Padua (Diocesan youth patron Saint) and St Augustine of Hippo.
+                  KCCUSA dedicates itself to the patronage of our Saints Anthony of Padua and St Augustine of Hippo. The youth fraternity keenly identifies with the spiritual journey of Saint Augustine, who exemplifies the power and salvific value of prayer. This Saint and Doctor of the Church is our guiding light and a reminder that there is always hope for salvation, and that no soul is beyond the mercies and graces of God if it returns to Him in true and humble contrition and prayer.
+                  Objectives:
+                  Unite Post-High School and Higher Education Youths: Bring together post high school, college, university, and graduate level youths, and nurture them into responsible adults on whom the future of the church can rest securely.
+                  Facilitate Spiritual and Social Growth: Help students from various parishes meet and share ideas on spiritual and social growth even as they pass through various but quite similar challenges in life.
+                  Provide Formative Experiences: Serve as a formative experience as they undergo the guidance of the patrons in charge and solve various issues together.
+                  Membership:
+                  KCCUSA comprises all Kericho Diocesse Catholic Youth at post high school, college, university, tertiary institutions, and graduate educational levelsEnrollment and registration of youths who have completed their Secondary level studies are conducted annually. This process aims to welcome them into our spiritual fraternity, providing them with a supportive community and guidance as they transition to their next educational milestones. It ensures that they are integrated into the values and activities of KCCUSA, fostering their spiritual growth and development alongside their academic pursuits. This annual registration underscores our commitment to nurturing young Catholics and preparing them for their roles as responsible adults within the Church and society.
+                  Leadership:
+                  The KCCUSA fraternity currently has leadership at the Diocesan level who liaise with our Chaplain Fr Moses Langat, youth chaplains, and priests at the Parish level, and Parish leadership to spearhead its various initiatives. The leadership details are as follows:
+                  Chaplain and Spiritual Director: Rev. Fr Moses Langat
+                  Moderator: Victor Kirui, Sironet Parish
+                  Vice Moderator: Immaculate Chebet, Bomet Parish
+                  Secretary: Anastasia Cherotich, Ndaraweta Parish
+                  Treasurer: Emmanuel Towet, Tegat Parish
+                  The group(KCCUSA) members has elected officials who serve at  parish and deanery levels. These elected leaders play vital roles in coordinating activities, facilitating member enrollment, and mobilizing initiatives within their respective areas. This organizational structure ensures democratic leadership and effective support for the spiritual and social growth of its members across the diocese.
+                  Ongoing Initiatives:
+                  Online Rosary Sessions:
+                  Purpose: To develop love and devotion for Our Mother Mary, Seat of Wisdom.
+                  Details: Daily Rosary sessions online via Google Meet from 8:55-9:30 PM.
+                  Activities: These sessions began on November 1st, during the month of Mary, and include praying the Rosary, Chaplet of Divine Mercy, and Novenas.
+                  Goals: Promote a spirit of prayer and observance of these spiritual norms, and foster active discourse and spiritual growth.
+                  Community Outreach and Support
+                  As part of its mission to serve the community, KCCUSA actively engages in initiatives that involve visiting and supporting individuals in need. This includes regular visits to hospitals to comfort the sick, elderly care facilities to spend time with seniors, and children's homes to provide companionship and assistance. These outreach efforts are rooted in the group's commitment to embodying Christian values of compassion and solidarity. By reaching out to the marginalized and vulnerable, KCCUSA strives to make a meaningful impact in the lives of those facing challenges within the community.
+                  [Photos to be attached]
+                  Supporting Diocesan Activities
+                  Additionally, KCCUSA plays an active role in supporting various activities organized by the diocese. As a cohesive group, they contribute their efforts to diocesan events, initiatives, and projects aimed at fostering spiritual growth and community development. Whether through participation in parish festivals, fundraising drives, or special liturgical celebrations, KCCUSA members unite to strengthen the fabric of their diocesan community. Their collective involvement reflects a commitment to service and solidarity within the Catholic Church, enriching both their own faith journey and the broader spiritual life of the diocese.
+                  </p>
+              <div>
+                  <div id="saint-augustine" class="subsection hidden">
+                      <h4>St. Augustine of Hippo</h4>
+                  <p>Biography and significance of St. Augustine of Hippo.Saint Augustine was born in 354 AD in a small town called Thagaste, in
+                      what is now Algeria. His early life was pretty wild and far from what we might think of as "saintly.” He was intelligent, curious, and like many of us, he questioned a lot of things, especially when it came to faith.
+                      
+                      Growing up, Augustine was more interested in parties and worldly
+                      pleasures than in prayer and church. He searched for happiness in all the wrong places, including partying and philosophy. He even joining a
+                      cult-like group called the Manichees. Despite his mother's (Saint Monica’s) prayers and tears, Augustine strayed far from the faith.
+                      
+                      But here’s where things get interesting: Augustine’s story takes a
+                      major twist when he encounters the writings of Saint Paul and hears
+                      the powerful preaching of Saint Ambrose in Milan. These experiences
+                      led him to realize that the joy he sought in worldly things was fleeting and shallow.
+                      
+                      One day, in a moment of despair, Augustine heard a child’s voice saying, “Take up and read.” He picked up a Bible and read a passage from Romans that spoke to his heart. This was his turning point.
+                      Augustine converted to Christianity, was baptized by Saint Ambrose, and eventually became a bishop, a theologian, and one of the Church's greatest saints.
+                      
+                      Just like Augustine, many of us grapple with questions about life, faith, and our purpose. Augustine’s journey from doubt to faith shows us that it’s okay to question and seek. It's part of growing and finding genuine faith.
+                      
+                      Augustine’s early life was full of temptations and mistakes. He reminds us that even saints had their struggles. What’s important is not our past, but our willingness to turn back to God and seek forgiveness in the sacrament of reconciliation. It’s never too late to turn back to God. No matter how far we’ve strayed, God’s grace is always there, waiting for us to take the next step towards Him.
+                      
+                      Augustine’s mother, Saint Monica, never gave up on him. Her prayers and love were instrumental in his conversion. This is a beautiful reminder of the power of prayer and the importance of not giving up on those we love.
+                      
+                      In his famous work " Confessions"  , Augustine wrote, “Our hearts are restless until they rest in You, O Lord.” This speaks volumes about the nature of true happiness. Real joy and peace are found in God, not in the temporary thrills of the world.
+                      
+                      Stay blessed, keep seeking, and remember: even if you’re feeling a bit
+                      lost now, there’s a saintly path ahead, just waiting for you to discover it.
+                      </p>
+              </div>
+              <div id="ycs" class="hidden">
+              <h3>YCS</h3>
+              <p>School-going kids above 14. <a href="#schools">Schools within the diocese</a>.</p>
+              </div>
+              <div id="iccsa" class="hidden">
+              <h3>ICCSA</h3>
+              <p>Inter-College Catholic Students Association.</p>
+          </div>
+          <div id="pmc" class="hidden">
+              <h3>PMC</h3>
+              <p>Pontifical Missionary Childhood for young children.</p>
+          </div>
+    </main>
+    
+<!-- PRE-FOOTER -->
+<div class="container py-5">
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <div class="text-center">
+          <img src="./assets/logo2.jpg" style="width: 80px;" alt="">
+        </div>
+        <h5 class="py-2">
+          Join our newsletter for the latest updates and releases.
+        </h5>
+        <div class="row">
+          <form class="form-Style">
+            <input
+              type="email"
+              class="form-control form-Input"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Your email"
+            />
+            <button class="secondaryBtn shadow-lg">
+              <span>Subscribe</span>
+            </button>
+          </form>
+        </div>
+        <small class="py-2"
+          >By subscribing, you agree to our Privacy Policy and consent to
+          receive updates from us.</small
+        >
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <h4 class="py-2">Quick Links</h4>
+        <ul class="footer-list">
+          <li>
+            <a class="" href="about/saint-anthony">St. Anthony of Padua</a>
+          </li>
+          <li><a class="" href="about/bio">Our Bio</a></li>
+          <li>
+            <a class="" href="about/history">Our History</a>
+          </li>
+          <li>
+            <a class="" href="events">News & Events</a>
+          </li>
+          <li>
+            <a class="" href="contact">Contact</a>
+          </li>
+          <li>
+            <a class="" href="#">Deaneries</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <h4 class="py-2">Follow Us</h4>
+        <ul class="footer-list">
+          <li>
+            <a class="" href="https://facebook.com/groups/239474049495117/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-facebook"> Facebook</i>
+            </a>
+            <a class="" href="https://tiktok.com/@youthofkerichodiocese" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-tiktok"> Tiktok</i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</main>
+<!-- FOOTER -->
+<footer class="footer text-light mt-auto py-3 bg-dark">
+  <div class="container">
+    <div class="row">
+      <span class="col-md-6"
+        >Crafted & Designed with <i class="bi bi-heart"></i> by
+        <a href="#">CDK Tech Team</a></span
+      >
+      <div class="col-md-6 footer-links">
+        <a href="">Privacy Policy</a>
+        <a href="">Terms of Service</a>
+      </div>
+    </div>
+    <p class="text-center mt-5">
+      &#169; 2024 Copyright CDK St. Anthony Of Padua Youth Service. All
+      Right Reserved
+    </p>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+<script src="./bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+</body>
+</html>
