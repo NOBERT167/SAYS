@@ -29,7 +29,7 @@ Clone the repository:
 
 bash
 Copy code
-git clone https://github.com/[your-username]/catholic-diocese-kericho-says.git
+git clone 
 Navigate to the project folder:
 
 bash
@@ -69,6 +69,6 @@ This project is licensed under the MIT License.
 Contact
 For questions, feedback, or more information, please contact us at:
 
-Email: info@kerichosays.org
+Email: stanthonyyouthservice@gmail.com
 GitHub Issues: Issues Page
 Thank you for visiting our repository! We hope this project serves as a valuable resource for our community and helps strengthen our faith and unity.
